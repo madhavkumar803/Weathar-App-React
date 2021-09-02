@@ -13,7 +13,7 @@ const App = () => {
   useEffect(() => {
     const fetchItems = async () => {
       const result = await axios.get(
-        `https://api.weatherapi.com/v1/current.json?key=35c9f92ac5bf4df0811144140212307&q=${cityName}`
+        `https://api.weatherapi.com/v1/current.json?key=your key=${cityName}`
       );
       setapiData(result.data);
     };
